@@ -30,9 +30,9 @@ function addListeners() {
 	});
 
 	document.querySelector('#mute').addEventListener("click", function(event) {
-		video.mute = (video.mute) ? false : true;
+		video.muted = (video.muted) ? false : true;
 		event.target.innerHTML = event.target.innerHTML == "Mute" ? "Unmute" : "Mute";
-		console.log("Video Mute is: " + video.mute);
+		// console.log("Video Mute is: " + video.muted);
 	});
 
 	document.querySelector('#slider').addEventListener("change", function(event) {
