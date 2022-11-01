@@ -37,6 +37,7 @@ function addListeners() {
 
 	document.querySelector('#slider').addEventListener("change", function(event) {
 		video.volume = event.target.value / 100;
+		document.getElementById("volume").innerHTML = (video.volume * 100).toString() + '%';
 	});
 
 	document.querySelector('#vintage').addEventListener("click", function() {
